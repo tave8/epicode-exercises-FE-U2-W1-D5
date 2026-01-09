@@ -230,7 +230,7 @@ section.discover > .posts {
   flex-direction: column;
   border: 1px solid black;
   flex-grow: 5;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 /* the post in discover */
@@ -298,6 +298,10 @@ section.discover > .posts > div > .content > .footer > .meta {
   align-items: center;
 }
 
+section.discover > .posts > div > .content > .footer > .meta > * {
+  margin-right: 0.2rem;
+}
+
 section.discover > .posts > div > .content > .footer > .meta .tag {
   background-color: rgb(233, 233, 233);
   padding: 0.4rem;
@@ -353,6 +357,7 @@ section.discover > .tags-and-footer > .tags > .content > div {
   color: rgb(105, 105, 105);
   border-radius: 5px;
   text-transform: capitalize;
+  font-size: 0.8rem;
 }
 
 /* THE PAGE'S "FOOTER" */
@@ -360,8 +365,10 @@ section.discover > .tags-and-footer > .tags > .content > div {
 section.discover > .tags-and-footer > .footer {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.8rem;
   padding-top: 1rem;
   color: rgb(105, 105, 105);
   text-transform: capitalize;
+  font-size: 0.8rem;
+
 }
