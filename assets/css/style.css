@@ -156,7 +156,12 @@ section.trending {
 }
 
 section.trending > .title {
-
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 section.trending > .posts {
