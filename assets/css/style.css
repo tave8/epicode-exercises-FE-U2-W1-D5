@@ -180,6 +180,7 @@ section.discover {
     display: flex;
     gap: 5rem;
     justify-content: center;
+    padding-top: 3rem;
 }
 
 section.discover > .posts {
@@ -187,19 +188,52 @@ section.discover > .posts {
     flex-direction: column;
     border: 1px solid black;
     flex-grow: 1;
+    gap: 1rem;
 }
 
 /* the post in discover */
 section.discover > .posts > div {
     display: flex;
-    padding: 2rem;
+    /* padding: 2rem; */
     border: 1px dotted gray;
 }
 
 /* the content of discover post */
 section.discover > .posts > div > .content {
-    
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
 }
+
+
+section.discover > .posts > div > .content > .author {
+    display: flex;
+    gap: 0.5rem;
+}
+
+section.discover > .posts > div > .content > .author > .img > img {
+    width: 20px;
+    border-radius: 50%;
+}
+
+section.discover > .posts > div > .content > .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+section.discover > .posts > div > .content > .snippet {
+    color: gray;
+
+}
+
+section.discover > .posts > div > .content > .footer {
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 /* the image container of the discover post */
 section.discover > .posts > div > .img {
