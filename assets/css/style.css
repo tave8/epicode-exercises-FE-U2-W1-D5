@@ -45,7 +45,7 @@ header > .navbar > .logo {
 }
 
 header > .navbar > .logo > img {
-    width: 80px;
+    width: 20px;
 }
 
 header > .navbar > .menu {
@@ -65,12 +65,16 @@ header > .navbar > .menu > nav > ul {
 
 
 header > .hero {
-    height: 100px;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    padding-block: 4rem;
+    gap: 2rem;
 }
 
 
 header > .hero > .title {
-    
+    font-size: 3rem;
 }
 
 
@@ -81,6 +85,14 @@ header > .hero > .slogan {
 
 header > .hero > .cta {
     
+}
+
+header > .hero > .cta > button {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding-inline: 2rem;
 }
 
 /***** END HEADER ***** */
