@@ -1,11 +1,40 @@
+/* borders and backgrounds so I can work better */
+
+header,
+main,
+header > *,
+main > * {
+    border: 1px solid black;   
+}
+
+
+/* must be equally centered  */
+header,
+section.trending,
+section.discover {
+    padding-inline: 10rem;
+
+} 
+
+header > * {
+    width: 100%;
+}
+
 
 /* ******** HEADER ********** */
 header {
-
+    /* height: 300px; */
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header > .navbar {
 
+
+header > .navbar {
+    height: 50px;
+    background-color: red;
 }
 
 header > .navbar > .company {
@@ -17,7 +46,7 @@ header > .navbar > .menu {
 }
 
 header > .hero {
-
+    height: 100px;
 }
 
 
@@ -38,10 +67,18 @@ header > .hero > .cta {
 /***** END HEADER ***** */
 
 
+main {
+    /* background-color: blue; */
+}
+
 /******** SECTION TRENDING **********/
 
 section.trending {
-
+    background-color: orange;
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 section.trending > .title {
@@ -49,19 +86,55 @@ section.trending > .title {
 }
 
 section.trending > .posts {
-
+    /* background-color: cyan; */
+    display: flex;
+    gap: 2rem;
 }
 
 /* the post in trending */
 section.trending > .posts > div {
+    display: flex;
+    border: 1px solid  gray;
+    width: 30%;
+    gap: .5rem;
+}
 
+/* the trending post's number */
+section.trending > .posts > div > .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 /* the trending post's content */
 section.trending > .posts > div > .content {
-    
+    flex-grow: 1;   
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
 }
 
+
+section.trending > .posts > div > .content > .author {
+    display: flex;
+    gap: .5rem;
+}
+
+section.trending > .posts > div > .content > .author > .img > img {
+    width: 20px;
+}
+
+
+section.trending > .posts > div > .content > .title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section.trending > .posts > div > .content > .meta {
+    color: gray;
+    font-size: 0.8rem;
+}
 
 
 /******** END SECTION TRENDING **********/
@@ -71,21 +144,38 @@ section.trending > .posts > div > .content {
 
 
 section.discover {
-
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
 }
 
 section.discover > .posts {
-
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    flex-grow: 1;
 }
 
 /* the post in discover */
 section.discover > .posts > div {
-
+    display: flex;
+    padding: 2rem;
+    border: 1px dotted gray;
 }
 
 /* the content of discover post */
 section.discover > .posts > div > .content {
     
+}
+
+/* the image container of the discover post */
+section.discover > .posts > div > .img {
+    
+}
+
+/* the image of the discover post */
+section.discover > .posts > div > .img > img {
+    width: 100px;
 }
 
 /* the last part of the discover post that contains 
@@ -97,6 +187,7 @@ section.discover > .posts > div > .content > .footer {
 /* DISCOVER TAGS */
 
 section.discover > .tags {
+    border: 1px solid black;
 
 }
 
