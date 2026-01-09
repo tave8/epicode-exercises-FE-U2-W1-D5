@@ -54,6 +54,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* m ripetute background */
+  background-image: url('../imgs/svg/m-ripetute.svg');
+  /* background-size: 30%; */
+  background-repeat: no-repeat;
+  background-position: top 70px right 0px;
 }
 
 header > .navbar > .wrapper {
