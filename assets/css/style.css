@@ -299,23 +299,21 @@ section.discover > .posts > div > .content > .footer > .meta {
 }
 
 section.discover > .posts > div > .content > .footer > .meta .tag {
-    background-color: rgb(233, 233, 233);
-    padding: .4rem;
-    border-radius: 30px;
-    color: black
+  background-color: rgb(233, 233, 233);
+  padding: 0.4rem;
+  border-radius: 30px;
+  color: black;
 }
 
 section.discover > .posts > div > .content > .footer > .meta .date,
-section.discover > .posts > div > .content > .footer > .meta .tag
- {
-    text-transform: capitalize;
+section.discover > .posts > div > .content > .footer > .meta .tag {
+  text-transform: capitalize;
 }
 
 section.discover > .posts > div > .content > .footer > .meta .date::after,
 section.discover > .posts > div > .content > .footer > .meta .read-time::after {
   content: " • ";
 }
-
 
 /* DISCOVER TAGS */
 
@@ -335,7 +333,10 @@ section.discover > .tags-and-footer > .tags {
 
 /* the discover tags container */
 section.discover > .tags-and-footer > .tags > .title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 /* the discover tags container */
@@ -347,10 +348,11 @@ section.discover > .tags-and-footer > .tags > .content {
 
 /* the discover tag */
 section.discover > .tags-and-footer > .tags > .content > div {
-  border: 1px solid black;
+  border: 1px solid rgb(215, 215, 215);
   padding: 0.5rem 1rem;
-  color: gray;
+  color: rgb(105, 105, 105);
   border-radius: 5px;
+  text-transform: capitalize;
 }
 
 /* THE PAGE'S "FOOTER" */
