@@ -433,3 +433,24 @@ section.discover > .tags-and-footer > .footer {
 }
 
 /* ANIMATIONS */
+
+/* navbar  */
+
+@keyframes navbar-animation {
+  0% {
+    background-color: #ffc017;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+.navbar-animate {
+  animation: navbar-animation 1s linear 1s;
+}
+/* 
+.navbar-animate button {
+    background-color: green;
+    color: white;
+} */
