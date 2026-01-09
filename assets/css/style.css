@@ -8,7 +8,8 @@ main > * {
 }
 
 
-/* must be equally centered  */
+/* CENTERS PAGE WITHIN TWO VERTICAL LINES,
+even if containers have no parent-child relationship */
 header,
 section.trending,
 section.discover {
@@ -19,6 +20,21 @@ section.discover {
 header > * {
     width: 100%;
 }
+
+
+/* ********** COMMON CLASSES */
+.text-gray {
+    color: gray;
+}
+
+.post-title-sm {
+
+}
+
+.post-title-md {
+
+}
+
 
 
 /* ******** HEADER ********** */
@@ -253,7 +269,7 @@ section.discover > .posts > div > .content > .footer {
 
 /* DISCOVER TAGS */
 
-section.discover > .tags {
+section.discover > .tags-and-footer {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -262,15 +278,26 @@ section.discover > .tags {
     gap: 1rem;
 }
 
+section.discover > .tags-and-footer > .tags {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1.5rem;
+}
+
 /* the discover tags container */
-section.discover > .tags > .content {
+section.discover > .tags-and-footer > .tags > .title {
+    margin-bottom: 0.5rem;
+}
+
+
+/* the discover tags container */
+section.discover > .tags-and-footer > .tags > .content {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
 }
 
 /* the discover tag */
-section.discover > .tags > .content > div {
+section.discover > .tags-and-footer > .tags > .content > div {
     border: 1px solid black;
     padding: 0.5rem 1rem;
     color: gray;
@@ -279,6 +306,9 @@ section.discover > .tags > .content > div {
 
 /* THE PAGE'S "FOOTER" */
 
-section.discover > .links {
-
+section.discover > .tags-and-footer > .footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    padding-top: 1rem;
 }
