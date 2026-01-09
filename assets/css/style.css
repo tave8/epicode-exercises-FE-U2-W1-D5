@@ -1,0 +1,117 @@
+
+/* ******** HEADER ********** */
+header {
+
+}
+
+header > .navbar {
+
+}
+
+header > .navbar > .company {
+
+}
+
+header > .navbar > .menu {
+    
+}
+
+header > .hero {
+
+}
+
+
+header > .hero > .title {
+    
+}
+
+
+header > .hero > .slogan {
+    
+}
+
+
+header > .hero > .cta {
+    
+}
+
+/***** END HEADER ***** */
+
+
+/******** SECTION TRENDING **********/
+
+section.trending {
+
+}
+
+section.trending > .title {
+
+}
+
+section.trending > .posts {
+
+}
+
+/* the post in trending */
+section.trending > .posts > div {
+
+}
+
+/* the trending post's content */
+section.trending > .posts > div > .content {
+    
+}
+
+
+
+/******** END SECTION TRENDING **********/
+
+
+/************ SECTION DISCOVER ***********/
+
+
+section.discover {
+
+}
+
+section.discover > .posts {
+
+}
+
+/* the post in discover */
+section.discover > .posts > div {
+
+}
+
+/* the content of discover post */
+section.discover > .posts > div > .content {
+    
+}
+
+/* the last part of the discover post that contains 
+ metadata and actions */
+section.discover > .posts > div > .content > .footer {
+    
+}
+
+/* DISCOVER TAGS */
+
+section.discover > .tags {
+
+}
+
+/* the discover tags container */
+section.discover > .tags > .content {
+    
+}
+
+/* the discover tag */
+section.discover > .tags > .content > div {
+    
+}
+
+/* THE PAGE'S "FOOTER" */
+
+section.discover > .links {
+
+}
