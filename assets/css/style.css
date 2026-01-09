@@ -13,14 +13,17 @@ header,
 main,
 header > *,
 main > * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 /* CENTERS PAGE WITHIN TWO VERTICAL LINES,
 even if containers have no parent-child relationship */
-header,
+header > .hero > .wrapper,
+header > .navbar > .wrapper,
 section.trending,
 section.discover {
+    /* change this to center all content 
+    in header and main */
   padding-inline: 10rem;
 }
 
@@ -53,30 +56,34 @@ header {
   align-items: center;
 }
 
-header > .navbar {
+header > .navbar > .wrapper {
+}
+
+header > .navbar > .wrapper {
   /* height: 50px; */
   /* background-color: red; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border-bottom: 1px solid black;
   display: flex;
   justify-content: space-between;
   padding-block: 1rem;
 }
 
-header > .navbar > .logo {
+header > .navbar > .wrapper > .logo {
   display: flex;
   align-items: center;
 }
 
-header > .navbar > .logo > img {
+header > .navbar > .wrapper > .logo > img {
   /* width: 20px; */
 }
 
-header > .navbar > .menu {
+header > .navbar > .wrapper > .menu {
   display: flex;
   align-items: center;
 }
 
-header > .navbar > .menu > nav > ul {
+header > .navbar > .wrapper > .menu > nav > ul {
   list-style-type: none;
   display: flex;
   gap: 1rem;
@@ -85,35 +92,34 @@ header > .navbar > .menu > nav > ul {
 
 /* the last menu item "get started"
 has a black button */
-header > .navbar > .menu > nav > ul > li:last-of-type button {
+header > .navbar > .wrapper > .menu > nav > ul > li:last-of-type button {
   background-color: black;
   color: white;
   padding: 0.5rem;
   border-radius: 30px;
 }
 
-header > .hero {
-  /* height: 100px; */
+header > .hero > .wrapper {
   display: flex;
   flex-direction: column;
   padding-block: 4rem;
   gap: 2rem;
 }
 
-header > .hero > .title {
+header > .hero > .wrapper > .title {
   font-size: 5rem;
   font-family: "Spectral", serif;
   letter-spacing: -1px;
 }
 
-header > .hero > .slogan {
+header > .hero > .wrapper > .slogan {
   line-height: 1.2rem;
 }
 
-header > .hero > .cta {
+header > .hero > .wrapper > .cta {
 }
 
-header > .hero > .cta > button {
+header > .hero > .wrapper > .cta > button {
   background-color: black;
   color: white;
   font-size: 1.1rem;
@@ -370,5 +376,6 @@ section.discover > .tags-and-footer > .footer {
   color: rgb(105, 105, 105);
   text-transform: capitalize;
   font-size: 0.8rem;
-
 }
+
+/* ANIMATIONS */
