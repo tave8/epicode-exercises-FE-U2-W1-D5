@@ -55,10 +55,16 @@ header {
   flex-direction: column;
   align-items: center;
   /* m ripetute background */
-  background-image: url('../imgs/svg/m-ripetute.svg');
+  background-image: url("../imgs/svg/m-ripetute.svg");
   /* background-size: 30%; */
   background-repeat: no-repeat;
   background-position: top 70px right 0px;
+}
+
+header > .navbar {
+  position: fixed;
+  background-color: #ffc017;
+  z-index: 9999;
 }
 
 header > .navbar > .wrapper {
@@ -101,6 +107,10 @@ header > .navbar > .wrapper > .menu > nav > ul > li:last-of-type button {
   padding: 0.5rem 0.8rem;
   border-radius: 30px;
   border: 0;
+}
+
+header > .hero {
+  padding-top: 90px;
 }
 
 header > .hero > .wrapper {
@@ -173,7 +183,7 @@ section.trending > .posts > div {
   /* min-width: 31%; */
   flex: 1 1 30%;
   gap: 1rem;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   margin-bottom: 2rem;
 }
 
@@ -187,8 +197,8 @@ section.trending > .posts > div > .number {
   font-size: 1.6rem;
 }
 
-section.trending > .posts > div > .number  > span {
-    margin-top: -0.3rem;
+section.trending > .posts > div > .number > span {
+  margin-top: -0.3rem;
 }
 
 /* the trending post's content */
@@ -205,30 +215,27 @@ section.trending > .posts > div > .content > .author {
 }
 
 section.trending > .posts > div > .content > .author > .info {
-    font-size: 0.8rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    display: flex;
-    align-items: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
 }
-
 
 section.trending > .posts > div > .content > .author > .info > * {
-    margin-right: .2rem;
+  margin-right: 0.2rem;
 }
-
 
 /* the word "in" */
 section.trending > .posts > div > .content > .author > .info > span:nth-of-type(2) {
-    text-transform: none;
-    font-weight: normal;
+  text-transform: none;
+  font-weight: normal;
 }
 
 /* the category */
 section.trending > .posts > div > .content > .author > .info > span:nth-of-type(3) {
-    text-transform: none;
+  text-transform: none;
 }
-
 
 section.trending > .posts > div > .content > .author > .img > img {
 }
@@ -250,8 +257,6 @@ section.trending > .posts > div > .content > .meta {
 section.trending > .posts > div > .content > .meta > * {
   margin-right: 0.2rem;
 }
-
-
 
 section.trending > .posts > div > .content > .meta .date {
   text-transform: capitalize;
