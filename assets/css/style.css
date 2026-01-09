@@ -1,362 +1,363 @@
 /* borders and backgrounds so I can work better */
 
 body {
-    color: #191919;
-    font-family: "Roboto", sans-serif;
+  color: #191919;
+  font-family: "Roboto", sans-serif;
 }
 
 button {
-    font-family: "Roboto", sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
-
 
 header,
 main,
 header > *,
 main > * {
-    border: 1px solid black;   
+  border: 1px solid black;
 }
-
 
 /* CENTERS PAGE WITHIN TWO VERTICAL LINES,
 even if containers have no parent-child relationship */
 header,
 section.trending,
 section.discover {
-    padding-inline: 10rem;
-
-} 
-
-header > * {
-    width: 100%;
+  padding-inline: 10rem;
 }
 
+header > * {
+  width: 100%;
+}
 
 /* ********** COMMON CLASSES */
 .text-gray {
-    color: gray;
+  color: gray;
 }
 
 .post-title-sm {
-
 }
 
 .post-title-md {
-
 }
 
 .post-author-img {
-    width: 20px;
-    border-radius: 50%;
+  width: 20px;
+  border-radius: 50%;
 }
-
-
 
 /* ******** HEADER ********** */
 header {
-    /* height: 300px; */
-    background-color: #ffc017;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* height: 300px; */
+  background-color: #ffc017;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-
 header > .navbar {
-    /* height: 50px; */
-    /* background-color: red; */
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    padding-block: 1rem;
+  /* height: 50px; */
+  /* background-color: red; */
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem;
 }
 
 header > .navbar > .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header > .navbar > .logo > img {
-    /* width: 20px; */
+  /* width: 20px; */
 }
 
 header > .navbar > .menu {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header > .navbar > .menu > nav > ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
-
 
 /* the last menu item "get started"
 has a black button */
 header > .navbar > .menu > nav > ul > li:last-of-type button {
-    background-color: black;
-    color: white;
-    padding: .5rem;
-    border-radius: 30px;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 30px;
 }
-
 
 header > .hero {
-    /* height: 100px; */
-    display: flex;
-    flex-direction: column;
-    padding-block: 4rem;
-    gap: 2rem;
+  /* height: 100px; */
+  display: flex;
+  flex-direction: column;
+  padding-block: 4rem;
+  gap: 2rem;
 }
-
 
 header > .hero > .title {
-    font-size: 5rem;
-    font-family: "Spectral", serif;
-    letter-spacing: -1px;
+  font-size: 5rem;
+  font-family: "Spectral", serif;
+  letter-spacing: -1px;
 }
-
 
 header > .hero > .slogan {
-    line-height: 1.2rem;
+  line-height: 1.2rem;
 }
 
-
 header > .hero > .cta {
-    
 }
 
 header > .hero > .cta > button {
-    background-color: black;
-    color: white;
-    font-size: 1.1rem;
-    border-radius: 20px;
-    padding: .2rem 2rem;
+  background-color: black;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  padding: 0.2rem 2rem;
 }
 
 /***** END HEADER ***** */
 
-
 main {
-    /* background-color: blue; */
+  /* background-color: blue; */
 }
 
 /******** SECTION TRENDING **********/
 
 section.trending {
-    /* background-color: orange; */
-    padding-block: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+  /* background-color: orange; */
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 section.trending > .title {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: .8rem;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 section.trending > .posts {
-    /* background-color: cyan; */
-    display: flex;
-    /* gap: 2rem; */
-    flex-wrap: wrap;
+  /* background-color: cyan; */
+  display: flex;
+  /* gap: 2rem; */
+  flex-wrap: wrap;
 }
 
 /* the post in trending */
 section.trending > .posts > div {
-    display: flex;
-    /* border: 1px solid  gray; */
-    width: 33%;
-    gap: 1rem;
-    margin-bottom: 2rem;
+  display: flex;
+  /* border: 1px solid  gray; */
+  width: 33%;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* the trending post's number */
 section.trending > .posts > div > .number {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    /* padding: 1rem; */
-    color: rgb(195, 195, 195);
-    font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* padding: 1rem; */
+  color: rgb(195, 195, 195);
+  font-size: 1.6rem;
 }
 
 /* the trending post's content */
 section.trending > .posts > div > .content {
-    flex-grow: 1;   
-    display: flex;
-    flex-direction: column;
-    gap: .6rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
-
 section.trending > .posts > div > .content > .author {
-    display: flex;
-    gap: .5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 section.trending > .posts > div > .content > .author > .name {
-    font-size: .8rem;
-    text-transform: capitalize;
-    display: flex;
-    align-items: center;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
 }
 
 section.trending > .posts > div > .content > .author > .img > img {
 }
 
-
 section.trending > .posts > div > .content > .title {
-    font-weight: bold;
-    font-size: 1rem;
-    text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
 }
 
 section.trending > .posts > div > .content > .meta {
-    color: gray;
-    font-size: 0.7rem;
+  color: gray;
+  font-size: 0.7rem;
 }
 
 section.trending > .posts > div > .content > .meta .date {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 section.trending > .posts > div > .content > .meta .date::after {
-    content: " • "
+  content: " • ";
 }
 
 /******** END SECTION TRENDING **********/
 
-
 /************ SECTION DISCOVER ***********/
 
-
 section.discover {
-    display: flex;
-    gap: 5rem;
-    justify-content: center;
-    padding-top: 3rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  padding-top: 3rem;
 }
 
 section.discover > .posts {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    flex-grow: 5;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  flex-grow: 5;
+  gap: 1rem;
 }
 
 /* the post in discover */
 section.discover > .posts > div {
-    display: flex;
-    /* padding: 2rem; */
-    border: 1px dotted gray;
-    gap: 1rem;
+  display: flex;
+  /* padding: 2rem; */
+  border: 1px dotted gray;
+  gap: 1rem;
 }
 
 /* the content of discover post */
 section.discover > .posts > div > .content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-
 section.discover > .posts > div > .content > .author {
-    display: flex;
-    gap: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 section.discover > .posts > div > .content > .author > .img > img {
 }
 
 section.discover > .posts > div > .content > .title {
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 section.discover > .posts > div > .content > .snippet {
-    color: gray;
-
+  color: gray;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
 }
 
 section.discover > .posts > div > .content > .footer {
-    color: gray;
-    display: flex;
-    justify-content: space-between;
+  color: gray;
+  display: flex;
+  justify-content: space-between;
 }
-
-
 
 /* the image container of the discover post */
 section.discover > .posts > div > .img {
-    /* flex-grow: 1; */
-    max-width: 200px;
+  /* flex-grow: 1; */
+  max-width: 200px;
 }
 
 /* the image of the discover post */
 section.discover > .posts > div > .img > img {
-    width: 100%;
+  width: 100%;
 }
 
 /* the last part of the discover post that contains 
  metadata and actions */
 section.discover > .posts > div > .content > .footer {
-    
 }
+
+section.discover > .posts > div > .content > .footer > .meta {
+  color: gray;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+section.discover > .posts > div > .content > .footer > .meta .tag {
+    background-color: rgb(233, 233, 233);
+    padding: .4rem;
+    border-radius: 30px;
+    color: black
+}
+
+section.discover > .posts > div > .content > .footer > .meta .date,
+section.discover > .posts > div > .content > .footer > .meta .tag
+ {
+    text-transform: capitalize;
+}
+
+section.discover > .posts > div > .content > .footer > .meta .date::after,
+section.discover > .posts > div > .content > .footer > .meta .read-time::after {
+  content: " • ";
+}
+
 
 /* DISCOVER TAGS */
 
 section.discover > .tags-and-footer {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    max-width: 30%;
-    gap: 1rem;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 30%;
+  gap: 1rem;
 }
 
 section.discover > .tags-and-footer > .tags {
-    border-bottom: 1px solid gray;
-    padding-bottom: 1.5rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1.5rem;
 }
 
 /* the discover tags container */
 section.discover > .tags-and-footer > .tags > .title {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-
 
 /* the discover tags container */
 section.discover > .tags-and-footer > .tags > .content {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 /* the discover tag */
 section.discover > .tags-and-footer > .tags > .content > div {
-    border: 1px solid black;
-    padding: 0.5rem 1rem;
-    color: gray;
-    border-radius: 5px;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  color: gray;
+  border-radius: 5px;
 }
 
 /* THE PAGE'S "FOOTER" */
 
 section.discover > .tags-and-footer > .footer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5rem;
-    padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1rem;
 }
