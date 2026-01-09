@@ -187,7 +187,7 @@ section.discover > .posts {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    flex-grow: 1;
+    flex-grow: 5;
     gap: 1rem;
 }
 
@@ -255,17 +255,26 @@ section.discover > .posts > div > .content > .footer {
 
 section.discover > .tags {
     border: 1px solid black;
-
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 30%;
+    gap: 1rem;
 }
 
 /* the discover tags container */
 section.discover > .tags > .content {
-    
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 /* the discover tag */
 section.discover > .tags > .content > div {
-    
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    color: gray;
+    border-radius: 5px;
 }
 
 /* THE PAGE'S "FOOTER" */
