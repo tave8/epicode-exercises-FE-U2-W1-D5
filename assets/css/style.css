@@ -1,5 +1,16 @@
 /* borders and backgrounds so I can work better */
 
+body {
+    color: #191919;
+    font-family: "Roboto", sans-serif;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+
+}
+
+
 header,
 main,
 header > *,
@@ -45,7 +56,7 @@ header > * {
 /* ******** HEADER ********** */
 header {
     /* height: 300px; */
-    background-color: yellow;
+    background-color: #ffc017;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,7 +66,7 @@ header {
 
 header > .navbar {
     /* height: 50px; */
-    background-color: red;
+    /* background-color: red; */
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
@@ -104,12 +115,14 @@ header > .hero {
 
 
 header > .hero > .title {
-    font-size: 3rem;
+    font-size: 5rem;
+    font-family: "Spectral", serif;
+    letter-spacing: -1px;
 }
 
 
 header > .hero > .slogan {
-    
+    line-height: 1.2rem;
 }
 
 
@@ -120,9 +133,9 @@ header > .hero > .cta {
 header > .hero > .cta > button {
     background-color: black;
     color: white;
-    font-size: 1rem;
-    border-radius: 10px;
-    padding-inline: 2rem;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    padding: .2rem 2rem;
 }
 
 /***** END HEADER ***** */
@@ -135,7 +148,7 @@ main {
 /******** SECTION TRENDING **********/
 
 section.trending {
-    background-color: orange;
+    /* background-color: orange; */
     padding-block: 2rem;
     display: flex;
     flex-direction: column;
