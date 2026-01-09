@@ -167,15 +167,17 @@ section.trending > .title {
 section.trending > .posts {
     /* background-color: cyan; */
     display: flex;
-    gap: 2rem;
+    /* gap: 2rem; */
+    flex-wrap: wrap;
 }
 
 /* the post in trending */
 section.trending > .posts > div {
     display: flex;
-    border: 1px solid  gray;
-    width: 30%;
+    /* border: 1px solid  gray; */
+    width: 33%;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* the trending post's number */
@@ -184,8 +186,8 @@ section.trending > .posts > div > .number {
     justify-content: center;
     /* align-items: center; */
     /* padding: 1rem; */
-    color: gray;
-    font-size: 1.5rem;
+    color: rgb(195, 195, 195);
+    font-size: 1.6rem;
 }
 
 /* the trending post's content */
@@ -193,7 +195,7 @@ section.trending > .posts > div > .content {
     flex-grow: 1;   
     display: flex;
     flex-direction: column;
-    gap: .2rem;
+    gap: .6rem;
 }
 
 
@@ -202,20 +204,35 @@ section.trending > .posts > div > .content > .author {
     gap: .5rem;
 }
 
+section.trending > .posts > div > .content > .author > .name {
+    font-size: .8rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
 section.trending > .posts > div > .content > .author > .img > img {
 }
 
 
 section.trending > .posts > div > .content > .title {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-transform: capitalize;
 }
 
 section.trending > .posts > div > .content > .meta {
     color: gray;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
+section.trending > .posts > div > .content > .meta .date {
+    text-transform: capitalize;
+}
+
+section.trending > .posts > div > .content > .meta .date::after {
+    content: " • "
+}
 
 /******** END SECTION TRENDING **********/
 
