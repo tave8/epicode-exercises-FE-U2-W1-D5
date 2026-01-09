@@ -327,7 +327,7 @@ section.discover > .tags-and-footer {
 }
 
 section.discover > .tags-and-footer > .tags {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(185, 185, 185);
   padding-bottom: 1.5rem;
 }
 
@@ -362,4 +362,6 @@ section.discover > .tags-and-footer > .footer {
   flex-wrap: wrap;
   gap: 0.5rem;
   padding-top: 1rem;
+  color: rgb(105, 105, 105);
+  text-transform: capitalize;
 }
