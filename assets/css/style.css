@@ -35,6 +35,11 @@ header > * {
 
 }
 
+.post-author-img {
+    width: 20px;
+    border-radius: 50%;
+}
+
 
 
 /* ******** HEADER ********** */
@@ -131,7 +136,7 @@ main {
 
 section.trending {
     background-color: orange;
-    padding-block: 3rem;
+    padding-block: 2rem;
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -152,15 +157,15 @@ section.trending > .posts > div {
     display: flex;
     border: 1px solid  gray;
     width: 30%;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 /* the trending post's number */
 section.trending > .posts > div > .number {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    /* align-items: center; */
+    /* padding: 1rem; */
     color: gray;
     font-size: 1.5rem;
 }
@@ -180,7 +185,6 @@ section.trending > .posts > div > .content > .author {
 }
 
 section.trending > .posts > div > .content > .author > .img > img {
-    width: 20px;
 }
 
 
@@ -221,6 +225,7 @@ section.discover > .posts > div {
     display: flex;
     /* padding: 2rem; */
     border: 1px dotted gray;
+    gap: 1rem;
 }
 
 /* the content of discover post */
@@ -228,7 +233,7 @@ section.discover > .posts > div > .content {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.5rem;
 }
 
 
@@ -238,8 +243,6 @@ section.discover > .posts > div > .content > .author {
 }
 
 section.discover > .posts > div > .content > .author > .img > img {
-    width: 20px;
-    border-radius: 50%;
 }
 
 section.discover > .posts > div > .content > .title {
@@ -262,12 +265,13 @@ section.discover > .posts > div > .content > .footer {
 
 /* the image container of the discover post */
 section.discover > .posts > div > .img {
-    
+    /* flex-grow: 1; */
+    max-width: 200px;
 }
 
 /* the image of the discover post */
 section.discover > .posts > div > .img > img {
-    width: 100px;
+    width: 100%;
 }
 
 /* the last part of the discover post that contains 
