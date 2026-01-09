@@ -49,19 +49,21 @@ header {
 
 
 header > .navbar {
-    height: 50px;
+    /* height: 50px; */
     background-color: red;
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
+    padding-block: 1rem;
 }
 
 header > .navbar > .logo {
-
+    display: flex;
+    align-items: center;
 }
 
 header > .navbar > .logo > img {
-    width: 20px;
+    /* width: 20px; */
 }
 
 header > .navbar > .menu {
@@ -72,11 +74,18 @@ header > .navbar > .menu {
 header > .navbar > .menu > nav > ul {
     list-style-type: none;
     display: flex;
-    gap: .5rem;
+    gap: 1rem;
+    align-items: center;
 }
 
-header > .navbar > .menu > nav > ul {
 
+/* the last menu item "get started"
+has a black button */
+header > .navbar > .menu > nav > ul > li:last-of-type button {
+    background-color: black;
+    color: white;
+    padding: .5rem;
+    border-radius: 30px;
 }
 
 
