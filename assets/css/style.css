@@ -22,7 +22,7 @@ header > .hero > .wrapper,
 header > .navbar > .wrapper,
 section.trending,
 section.discover {
-    /* change this to center all content 
+  /* change this to center all content 
     in header and main */
   padding-inline: 10rem;
 }
@@ -57,9 +57,6 @@ header {
 }
 
 header > .navbar > .wrapper {
-}
-
-header > .navbar > .wrapper {
   /* height: 50px; */
   /* background-color: red; */
   /* border: 1px solid black; */
@@ -67,6 +64,7 @@ header > .navbar > .wrapper {
   display: flex;
   justify-content: space-between;
   padding-block: 1rem;
+  font-size: 0.9rem;
 }
 
 header > .navbar > .wrapper > .logo {
@@ -95,8 +93,9 @@ has a black button */
 header > .navbar > .wrapper > .menu > nav > ul > li:last-of-type button {
   background-color: black;
   color: white;
-  padding: 0.5rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 30px;
+  border: 0;
 }
 
 header > .hero > .wrapper {
@@ -124,7 +123,8 @@ header > .hero > .wrapper > .cta > button {
   color: white;
   font-size: 1.1rem;
   border-radius: 20px;
-  padding: 0.2rem 2rem;
+  padding: 0.5rem 2.3rem;
+  border: 0;
 }
 
 /***** END HEADER ***** */
@@ -137,10 +137,11 @@ main {
 
 section.trending {
   /* background-color: orange; */
-  padding-block: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.7rem;
 }
 
 section.trending > .title {
@@ -163,19 +164,26 @@ section.trending > .posts {
 section.trending > .posts > div {
   display: flex;
   /* border: 1px solid  gray; */
-  width: 33%;
+  /* width: 31%; */
+  /* min-width: 31%; */
+  flex: 1 1 30%;
   gap: 1rem;
+  margin-right: .5rem;
   margin-bottom: 2rem;
 }
 
 /* the trending post's number */
 section.trending > .posts > div > .number {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   /* align-items: center; */
   /* padding: 1rem; */
   color: rgb(195, 195, 195);
   font-size: 1.6rem;
+}
+
+section.trending > .posts > div > .number  > span {
+    margin-top: -0.3rem;
 }
 
 /* the trending post's content */
@@ -191,12 +199,31 @@ section.trending > .posts > div > .content > .author {
   gap: 0.5rem;
 }
 
-section.trending > .posts > div > .content > .author > .name {
-  font-size: 0.8rem;
-  text-transform: capitalize;
-  display: flex;
-  align-items: center;
+section.trending > .posts > div > .content > .author > .info {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
 }
+
+
+section.trending > .posts > div > .content > .author > .info > * {
+    margin-right: .2rem;
+}
+
+
+/* the word "in" */
+section.trending > .posts > div > .content > .author > .info > span:nth-of-type(2) {
+    text-transform: none;
+    font-weight: normal;
+}
+
+/* the category */
+section.trending > .posts > div > .content > .author > .info > span:nth-of-type(3) {
+    text-transform: none;
+}
+
 
 section.trending > .posts > div > .content > .author > .img > img {
 }
@@ -205,12 +232,21 @@ section.trending > .posts > div > .content > .title {
   font-weight: bold;
   font-size: 1rem;
   text-transform: capitalize;
+  line-height: 1.2rem;
 }
 
 section.trending > .posts > div > .content > .meta {
   color: gray;
   font-size: 0.7rem;
+  display: flex;
+  align-items: center;
 }
+
+section.trending > .posts > div > .content > .meta > * {
+  margin-right: 0.2rem;
+}
+
+
 
 section.trending > .posts > div > .content > .meta .date {
   text-transform: capitalize;
@@ -234,7 +270,7 @@ section.discover {
 section.discover > .posts {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   flex-grow: 5;
   gap: 2.5rem;
 }
@@ -243,7 +279,7 @@ section.discover > .posts {
 section.discover > .posts > div {
   display: flex;
   /* padding: 2rem; */
-  border: 1px dotted gray;
+  /* border: 1px dotted gray; */
   gap: 1rem;
 }
 
@@ -258,6 +294,14 @@ section.discover > .posts > div > .content {
 section.discover > .posts > div > .content > .author {
   display: flex;
   gap: 0.5rem;
+}
+
+section.discover > .posts > div > .content > .author > .name {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
 }
 
 section.discover > .posts > div > .content > .author > .img > img {
@@ -328,7 +372,7 @@ section.discover > .posts > div > .content > .footer > .meta .read-time::after {
 /* DISCOVER TAGS */
 
 section.discover > .tags-and-footer {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   flex-grow: 1;
