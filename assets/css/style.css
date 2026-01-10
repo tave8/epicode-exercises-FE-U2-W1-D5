@@ -339,6 +339,7 @@ section.discover > .posts > div > .content > .footer {
 section.discover > .posts > div > .img {
   /* flex-grow: 1; */
   max-width: 200px;
+  min-width: 200px;
 }
 
 /* the image of the discover post */
