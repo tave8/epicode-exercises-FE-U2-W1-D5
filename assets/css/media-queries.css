@@ -44,7 +44,7 @@
 }
 
 /* TABLET */
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
   header > .hero > .wrapper,
   header > .navbar > .wrapper,
   section.trending,
