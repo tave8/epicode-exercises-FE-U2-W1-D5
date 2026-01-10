@@ -31,6 +31,16 @@
     margin-right: 0.5rem;
     margin-bottom: 2rem;
   }
+
+  section.discover {
+    flex-direction: column;
+  }
+
+  section.discover > .tags-and-footer {
+    /* first item */
+    order: -1;
+    max-width: 100%;
+  }
 }
 
 /* TABLET */
