@@ -21,7 +21,16 @@
     background-image: none;
   }
 
-  
+  section.trending > .posts {
+    flex-direction: column;
+  }
+
+  /* the post in trending */
+  section.trending > .posts > div {
+    gap: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /* TABLET */
