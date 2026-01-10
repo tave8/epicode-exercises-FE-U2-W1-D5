@@ -449,6 +449,7 @@ section.discover > .tags-and-footer > .footer {
 .navbar-animate {
   animation: navbar-animation 1s linear 1s;
 }
+
 /* 
 .navbar-animate button {
     background-color: green;

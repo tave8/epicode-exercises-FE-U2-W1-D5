@@ -1,0 +1,29 @@
+/* MOBILE */
+@media screen and (max-width: 576px) {
+  header > .hero > .wrapper,
+  header > .navbar > .wrapper,
+  section.trending,
+  section.discover {
+    /* change this to center all content 
+    in header and main */
+    padding-inline: 1rem;
+  }
+
+  /* the first 3 menu items disappear */
+  header > .navbar > .wrapper > .menu > nav ul li:nth-child(1),
+  header > .navbar > .wrapper > .menu > nav ul li:nth-child(2),
+  header > .navbar > .wrapper > .menu > nav ul li:nth-child(3) {
+    display: none;
+  }
+
+  /* hero background disappears */
+  header {
+    background-image: none;
+  }
+
+  
+}
+
+/* TABLET */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
