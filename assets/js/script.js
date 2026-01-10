@@ -9,63 +9,80 @@ window.addEventListener("load", main);
 let lastScrollTimeout = null;
 const scrollDelayMs = 100;
 
-
 const handleScrollOnFinishDelay = () => {
   // get the hero
   const hero = document.querySelector("header > .hero");
   const heroCoordinates = hero.getBoundingClientRect();
-  
+
   console.log(heroCoordinates.bottom);
-  
-  const headerHeight = 100
+
+  const headerHeight = 100;
 
   // if scroll is before hero bottom
 
   /** this is HERO
    * the number 100 represents the hero's bottom.
-   * 110 is an example to show a number > 100 
-   * 
-   * -------------------------------- DISTANCE: HERO BOTTOM TO VIEWPORT TOP: 100 
-   * 
+   * 110 is an example to show a number > 100
+   *
+   * -------------------------------- DISTANCE: HERO BOTTOM TO VIEWPORT TOP: 100
+   *
    * |                              |
    * |                              |
    * |                              |
-   * --------------------------------     
-   * 
-  */
+   * --------------------------------
+   *
+   */
 
   if (heroCoordinates.bottom >= headerHeight) {
     // if no navbar animation exists, add the "to white" animation
     if (existsToWhiteNavbarAnimation()) {
-      // navbar
-      removeToWhiteNavbarAnimation()
-      addToYellowNavbarAnimation();
-      // button
-      removeToGreenButtonNavbarAnimation()
-      addToBlackButtonNavbarAnimation()
+      removeNavbarAnimationState2();
+      addNavbarAnimationState1();
     }
-  }
-  else {
+  } else {
     // if no animation exists, add the "to white" animation
     if (!existsAnyNavbarAnimation()) {
-      // navbar
-      addToWhiteNavbarAnimation()
-      // button
-      addToGreenButtonNavbarAnimation()
+      addNavbarAnimationState2();
     }
     // if the "to yellow" animation exists,
-    // remove it and add the "to white" animation 
+    // remove it and add the "to white" animation
     else if (existsToYellowNavbarAnimation()) {
-      // navbar
-      removeToYellowNavbarAnimation()
-      addToWhiteNavbarAnimation()
-      // button
-      removeToBlackButtonNavbarAnimation()
-      addToGreenButtonNavbarAnimation()
+      removeNavbarAnimationState1();
+      addNavbarAnimationState2();
     }
   }
+};
 
-  
+// THE ENTIRE NAVBAR ANIMATION: STATE 1: ADD
+const addNavbarAnimationState1 = () => {
+  // navbar
+  addToYellowNavbarAnimation();
+  // button
+  addToBlackButtonNavbarAnimation();
+};
+
+// THE ENTIRE NAVBAR ANIMATION: STATE 1: REMOVE
+const removeNavbarAnimationState1 = () => {
+  // navbar
+  removeToYellowNavbarAnimation();
+  // button
+  removeToBlackButtonNavbarAnimation();
+};
+
+// THE ENTIRE NAVBAR ANIMATION: STATE 2: ADD
+const addNavbarAnimationState2 = () => {
+  // navbar
+  addToWhiteNavbarAnimation();
+  // button
+  addToGreenButtonNavbarAnimation();
+};
+
+// THE ENTIRE NAVBAR ANIMATION: STATE 2: REMOVE
+const removeNavbarAnimationState2 = () => {
+  // navbar
+  removeToWhiteNavbarAnimation();
+  // button
+  removeToGreenButtonNavbarAnimation();
 };
 
 // avoids triggering the scroll handler for every scroll
@@ -74,7 +91,6 @@ const handleScroll = () => {
   clearTimeout(lastScrollTimeout);
   lastScrollTimeout = setTimeout(handleScrollOnFinishDelay, scrollDelayMs);
 };
-
 
 const addEventNavbarScroll = () => {
   // get the hero y coordinate of bottom border
@@ -90,9 +106,9 @@ const addProperNavbarAnimation = () => {
   const hero = document.querySelector("header > .hero");
 
   const heroCoordinates = hero.getBoundingClientRect();
+  
   if (heroCoordinates.bottom < 0) {
-    addToWhiteNavbarAnimation();
-    addToGreenButtonNavbarAnimation()
+    addNavbarAnimationState2()
   }
 };
 
@@ -129,7 +145,6 @@ const removeToYellowNavbarAnimation = () => {
   const navbar = document.querySelector("header > .navbar");
   navbar.classList.remove("navbar-animate-to-yellow");
 };
-
 
 const removeToGreenButtonNavbarAnimation = () => {
   const navbar = document.querySelector("header > .navbar button");

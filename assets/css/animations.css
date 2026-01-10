@@ -49,19 +49,19 @@ the navbar animation  */
 
 /* navbar animation */
 .navbar-animate-to-white {
-  animation: navbar-animation-to-white 1s ease-in forwards;
+  animation: navbar-animation-to-white .5s ease-in forwards;
 }
 
 .navbar-animate-to-yellow {
-  animation: navbar-animation-to-yellow 1s ease-in forwards;
+  animation: navbar-animation-to-yellow .5s ease-in forwards;
 }
 
 /* navbar button animation */
 
 .button-navbar-animate-to-green {
-  animation: button-navbar-animation-to-green 1s ease-in forwards;
+  animation: button-navbar-animation-to-green .5s ease-in forwards;
 }
 
 .button-navbar-animate-to-black {
-  animation: button-navbar-animation-to-black 1s ease-in forwards;
+  animation: button-navbar-animation-to-black .5s ease-in forwards;
 }
