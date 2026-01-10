@@ -14,7 +14,7 @@ const handleScrollOnFinishDelay = () => {
   const hero = document.querySelector("header > .hero");
   const heroCoordinates = hero.getBoundingClientRect();
 
-  console.log(heroCoordinates.bottom);
+  // console.log(heroCoordinates.bottom);
 
   // if scroll is before hero bottom
 
