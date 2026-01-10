@@ -45,4 +45,35 @@
 
 /* TABLET */
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  header > .hero > .wrapper,
+  header > .navbar > .wrapper,
+  section.trending,
+  section.discover {
+    /* change this to center all content 
+    in header and main */
+    padding-inline: 1rem;
+  }
+
+  /* the post in trending */
+  section.trending > .posts > div {
+    min-width: 40%;
+  }
+
+  section.discover {
+    flex-direction: column;
+  }
+
+  section.discover > .tags-and-footer {
+    /* first item */
+    order: -1;
+    max-width: 100%;
+  }
+}
+
+/* FROM TABLET TO BEFORE DESKTOP */
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  /* the m repeated background is shown less */
+  header {
+    background-position: top 70px right -250px;
+  }
 }
