@@ -16,8 +16,6 @@ const handleScrollOnFinishDelay = () => {
 
   console.log(heroCoordinates.bottom);
 
-  const headerHeight = 100;
-
   // if scroll is before hero bottom
 
   /** this is HERO
@@ -33,7 +31,7 @@ const handleScrollOnFinishDelay = () => {
    *
    */
 
-  if (heroCoordinates.bottom >= headerHeight) {
+  if (heroCoordinates.bottom >= getHeaderHeight()) {
     // if no navbar animation exists, add the "to white" animation
     if (existsToWhiteNavbarAnimation()) {
       removeNavbarAnimationState2();
@@ -92,6 +90,8 @@ const handleScroll = () => {
   lastScrollTimeout = setTimeout(handleScrollOnFinishDelay, scrollDelayMs);
 };
 
+
+
 const addEventNavbarScroll = () => {
   // get the hero y coordinate of bottom border
 
@@ -102,15 +102,24 @@ const addEventNavbarScroll = () => {
   window.addEventListener("scroll", handleScroll);
 };
 
+
+// executed only on page load, to immediately 
+// apply the appropriate animation based 
+// on navbar position/scroll
 const addProperNavbarAnimation = () => {
   const hero = document.querySelector("header > .hero");
 
   const heroCoordinates = hero.getBoundingClientRect();
-  
-  if (heroCoordinates.bottom < 0) {
+
+  if (heroCoordinates.bottom < getHeaderHeight()) {
     addNavbarAnimationState2()
   }
 };
+
+
+const getHeaderHeight = () => {
+  return 200
+}
 
 // ADD ANIMATION
 
