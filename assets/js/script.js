@@ -19,7 +19,7 @@ const addEventNavbarScroll = () => {
   window.addEventListener("scroll", (event) => {
     // check if y scroll is > or < than hero - x
     const heroCoordinates = hero.getBoundingClientRect();
-    console.log(heroCoordinates.bottom);
+    // console.log(heroCoordinates.bottom);
     if (heroCoordinates.bottom < 150) {
       // console.log("activate animation")
       // navbar.classList.add("navbar-animate")
