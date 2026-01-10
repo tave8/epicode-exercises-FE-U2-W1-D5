@@ -37,20 +37,31 @@ const handleScrollOnFinishDelay = () => {
   if (heroCoordinates.bottom >= headerHeight) {
     // if no navbar animation exists, add the "to white" animation
     if (existsToWhiteNavbarAnimation()) {
+      // navbar
       removeToWhiteNavbarAnimation()
       addToYellowNavbarAnimation();
+      // button
+      removeToGreenButtonNavbarAnimation()
+      addToBlackButtonNavbarAnimation()
     }
   }
   else {
     // if no animation exists, add the "to white" animation
     if (!existsAnyNavbarAnimation()) {
+      // navbar
       addToWhiteNavbarAnimation()
+      // button
+      addToGreenButtonNavbarAnimation()
     }
     // if the "to yellow" animation exists,
     // remove it and add the "to white" animation 
     else if (existsToYellowNavbarAnimation()) {
+      // navbar
       removeToYellowNavbarAnimation()
       addToWhiteNavbarAnimation()
+      // button
+      removeToBlackButtonNavbarAnimation()
+      addToGreenButtonNavbarAnimation()
     }
   }
 
@@ -81,6 +92,7 @@ const addProperNavbarAnimation = () => {
   const heroCoordinates = hero.getBoundingClientRect();
   if (heroCoordinates.bottom < 0) {
     addToWhiteNavbarAnimation();
+    addToGreenButtonNavbarAnimation()
   }
 };
 
@@ -96,6 +108,16 @@ const addToYellowNavbarAnimation = () => {
   navbar.classList.add("navbar-animate-to-yellow");
 };
 
+const addToGreenButtonNavbarAnimation = () => {
+  const button = document.querySelector("header > .navbar button");
+  button.classList.add("button-navbar-animate-to-green");
+};
+
+const addToBlackButtonNavbarAnimation = () => {
+  const button = document.querySelector("header > .navbar button");
+  button.classList.add("button-navbar-animate-to-black");
+};
+
 // REMOVE ANIMATION
 
 const removeToWhiteNavbarAnimation = () => {
@@ -106,6 +128,17 @@ const removeToWhiteNavbarAnimation = () => {
 const removeToYellowNavbarAnimation = () => {
   const navbar = document.querySelector("header > .navbar");
   navbar.classList.remove("navbar-animate-to-yellow");
+};
+
+
+const removeToGreenButtonNavbarAnimation = () => {
+  const navbar = document.querySelector("header > .navbar button");
+  navbar.classList.remove("button-navbar-animate-to-green");
+};
+
+const removeToBlackButtonNavbarAnimation = () => {
+  const navbar = document.querySelector("header > .navbar button");
+  navbar.classList.remove("button-navbar-animate-to-black");
 };
 
 // EXISTS ANIMATION
