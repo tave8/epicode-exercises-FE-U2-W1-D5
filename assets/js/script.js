@@ -118,7 +118,8 @@ const addProperNavbarAnimation = () => {
 
 
 const getHeaderHeight = () => {
-  return 200
+  // get the navbar's height
+  return document.querySelector("header > .navbar").offsetHeight
 }
 
 // ADD ANIMATION
